@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather App</title>
+    <link rel="stylesheet" href="5.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Live Weather App</h1>
+        
+        <div class="error" id="error-message"></div>
+        
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter any city name...">
+            <button id="search-button">🔍</button>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Fetching live weather data...</p>
+        </div>
+        
+        <div class="weather-info" id="weather-info">
+            <div class="city-name" id="city-name">--</div>
+            <div class="weather-desc" id="weather-desc">--</div>
+            <img src="" alt="Weather icon" class="weather-icon" id="weather-icon">
+            <div class="temperature" id="temperature">--°</div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-label">Feels Like</div>
+                    <div class="detail-value" id="feels-like">--°</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Humidity</div>
+                    <div class="detail-value" id="humidity">--%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Wind Speed</div>
+                    <div class="detail-value" id="wind-speed">-- mph</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Pressure</div>
+                    <div class="detail-value" id="pressure">-- hPa</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="forecast" id="forecast"></div>
+    </div>
+
+    <script src="5.js"></script>
+</body>
+</html>
